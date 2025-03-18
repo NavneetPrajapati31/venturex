@@ -7,7 +7,7 @@ import React from "react";
 
 const StartupCard = ({ post }: { post: StartupTypeCard }) => {
   return (
-    <li className="startup-card group">
+    <li className="startup-card group !border-gray-600">
       <div className="flex-between">
         <p className="startup_card_date">{formatDate(post._createdAt)}</p>
         <div className="flex gap-1.5">
