@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #000000 !important;
   --foreground: #000000;
   /* --navbar-bg: rgba(0, 0, 0, 0.8); */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
+    --background: #000000 !important;
     --foreground: #ffffff;
   }
 }
@@ -68,22 +68,7 @@
   }
   .pink_container {
     @apply w-full min-h-screen flex justify-center items-center flex-col py-10 px-6 relative overflow-hidden pt-32;
-    background: black;
-  }
-
-  .pink_container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    background: url(/wp12793976-4k-dark-gradient-wallpapers.png) no-repeat
-      center center fixed;
-    background-size: 100% 100vh;
-    background-position: center top;
-    filter: blur(40px);
-    pointer-events: none;
+    background: transparent;
   }
 
   /* Main radial gradient with smoother blending and enhanced glow */
@@ -284,7 +269,11 @@
 }
 
 body {
-  background: var(--background);
+  background: url(/wp12793976-4k-dark-gradient-wallpapers.png) no-repeat center
+    center fixed;
+  background-size: 100% 100vh;
+  background-position: center top;
+  background-color: var(--background) !important;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
