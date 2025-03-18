@@ -73,47 +73,25 @@
   }
 
   /* Main radial gradient with smoother blending and enhanced glow */
-  .pink_container::after {
+  /* .pink_container::after {
     content: "";
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     background: radial-gradient(
-      ellipse at 50% 0%,
-      rgba(0, 0, 145, 0.812) 0%,
-      rgba(0, 0, 125, 0.682) 20%,
-      rgba(0, 0, 128, 0.682) 40%,
-      rgba(0, 200, 255, 0.493) 60%,
-      rgba(0, 4, 80, 0.61) 80%,
-      rgba(0, 0, 25, 0.815) 95%,
+      ellipse 250% 50% at 50% 0%,
+      rgba(0, 0, 119, 0.908) 0%,
+      rgba(0, 0, 0, 1) 40%,
       black 100%
     );
 
-    background-size: 100% 100vh; /* Keep full size on desktop */
-    background-position: center top; /* Ensure it stays at the top */
+    background-size: 100% 100vh;
+    background-position: center top; 
     filter: blur(40px);
     pointer-events: none;
-  }
-
-  /* 🔹 Crop the gradient for tablets */
-  @media (max-width: 1024px) {
-    .pink_container::after {
-      background-size: 150% 100vh; /* Slightly zoom in to crop */
-      background-position: center top; /* Keep the top portion */
-      filter: blur(30px); /* Reduce blur for clarity */
-    }
-  }
-
-  /* 🔹 Crop the gradient even more for mobile */
-  @media (max-width: 768px) {
-    .pink_container::after {
-      background-size: 200% 100vh; /* Zoom in further */
-      background-position: center top; /* Keep the upper part visible */
-      filter: blur(20px); /* Reduce blur further */
-    }
-  }
+  } */
 
   /* Ensuring all content stays above the effect */
   .pink_container > * {
@@ -203,7 +181,7 @@
 
   /* startupcard */
   .startup-card {
-    @apply bg-black bg-opacity-25 border-[1px] border-white py-6 px-5 rounded-[22px] transition-all duration-500 hover:bg-primary-100 hover:bg-opacity-50;
+    @apply bg-black bg-opacity-25 border-[1px] border-white py-6 px-5 rounded-[22px] transition-all duration-500 hover:bg-primary-100;
     z-index: 2;
   }
 
