@@ -8,14 +8,14 @@ const Navbar = async () => {
     <header className="px-5 py-3 bg-black shadow-sm font-work-sans">
       <nav className="flex justify-between items-center">
         <Link href="/">
-          <h1 className="text-2xl font-semibold">VentureX</h1>
+          <h1 className="text-xl font-semibold">VentureX</h1>
         </Link>
 
         <div className="flex items-center gap-5">
           {session && session?.user ? (
             <>
               <Link href="/startup/create">
-                <span>Create</span>
+                <span className="font-semibold">Create</span>
               </Link>
 
               <form
@@ -24,11 +24,13 @@ const Navbar = async () => {
                   await signOut({ redirectTo: "/" });
                 }}
               >
-                <button type="submit">Logout</button>
+                <button type="submit" className="font-semibold">
+                  Logout
+                </button>
               </form>
 
               <Link href={`/user/${session?.id}`}>
-                <span>{session?.user?.name}</span>
+                <span className="font-semibold">{session?.user?.name}</span>
               </Link>
             </>
           ) : (
@@ -39,7 +41,9 @@ const Navbar = async () => {
                 await signIn("github");
               }}
             >
-              <button type="submit">Login</button>
+              <button type="submit" className="font-semibold">
+                Login
+              </button>
             </form>
           )}
         </div>
