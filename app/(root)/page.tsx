@@ -42,6 +42,39 @@ export default async function Home({
       category: "Robots",
       title: "We Robots",
     },
+    {
+      _createdAt: new Date(),
+      views: 55,
+      author: { _id: 1, name: "Navneet" },
+      _id: 1,
+      description: "This is a description",
+      image:
+        "https://images.unsplash.com/photo-1618901882187-b56b57036cb3?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "Robots",
+      title: "We Robots",
+    },
+    {
+      _createdAt: new Date(),
+      views: 55,
+      author: { _id: 1, name: "Navneet" },
+      _id: 1,
+      description: "This is a description",
+      image:
+        "https://images.unsplash.com/photo-1618901882187-b56b57036cb3?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "Robots",
+      title: "We Robots",
+    },
+    {
+      _createdAt: new Date(),
+      views: 55,
+      author: { _id: 1, name: "Navneet" },
+      _id: 1,
+      description: "This is a description",
+      image:
+        "https://images.unsplash.com/photo-1618901882187-b56b57036cb3?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "Robots",
+      title: "We Robots",
+    },
   ];
 
   return (
