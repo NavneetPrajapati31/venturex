@@ -32,7 +32,7 @@ const Navbar = async () => {
               </form>
 
               <div className="flex items-center gap-2 px-2">
-                <span className="text-white/70 text-sm">
+                <span className="text-white/70 hover:text-white transition-colors duration-200 font-medium text-[15px] ">
                   {session?.user?.name}
                 </span>
               </div>

@@ -99,7 +99,7 @@
   }
 
   .tag {
-    @apply bg-secondary px-6 py-3 font-work-sans font-bold rounded-sm uppercase relative tag-tri;
+    @apply bg-white text-black px-6 py-3 font-work-sans font-bold rounded-sm uppercase relative tag-tri;
   }
 
   .heading {
@@ -145,7 +145,7 @@
 
   /* idea details */
   .divider {
-    @apply border-dotted bg-zinc-400 max-w-4xl my-10 mx-auto;
+    @apply border-solid border-white-100 border-t max-w-7xl my-10 mx-auto;
   }
 
   .view_skeleton {
@@ -239,7 +239,7 @@
   }
 
   .view-text {
-    @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-lg capitalize;
+    @apply font-medium text-[16px] bg-black px-4 py-2 rounded-lg capitalize;
   }
 
   .category-tag {

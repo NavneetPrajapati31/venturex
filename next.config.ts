@@ -10,6 +10,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+
+  // Removed invalid experimental property
+  experimental: {},
+
+  devIndicators: {
+    appIsrStatus: true,
+    buildActivity: true,
+    buildActivityPosition: "bottom-right",
+  },
 };
 
 export default nextConfig;
