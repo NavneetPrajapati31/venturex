@@ -60,7 +60,9 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
             <p className="category-tag">{post.category}</p>
           </div>
 
-          <h3 className="text-30-semibold !text-white">Pitch Details</h3>
+          <h3 className="text-26-semibold !font-medium !text-white">
+            Pitch Details
+          </h3>
           {parsedContent ? (
             <article
               className="prose prose-invert max-w-7xl font-work-sans break-all"
