@@ -46,7 +46,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
         />
 
         <div className="space-y-5 mt-10 max-w-7xl mx-auto">
-          <div className="flex-between gap-5">
+          <div className="flex-between gap-5 flex-nowrap xs:flex-wrap">
             <Link
               href={`/user/${post.author?._id}`}
               className="flex gap-3 items-center mb-3"
@@ -66,7 +66,9 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
                 </p>
               </div>
             </Link>
-            <p className="category-tag">{post.category}</p>
+            <div className="xs:w-fit">
+              <p className="category-tag">{post.category}</p>
+            </div>
           </div>
 
           <h3 className="font-semibold text-white text-[22px]">
