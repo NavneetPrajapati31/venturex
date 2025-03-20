@@ -25,7 +25,7 @@ export default async function Home({
       <section className="pink_container">
         <h1 className="heading !mt-0">Pitch your Startup now!</h1>
 
-        <p className="sub-heading !max-w-3xl !text-gray-400">
+        <p className="sub-heading !max-w-3xl !text-gray-200">
           Submit Ideas, Vote on Pitches and Get Noticed in Virtual Competitions.
         </p>
         <SearchForm query={query} />

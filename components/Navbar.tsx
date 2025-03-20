@@ -55,7 +55,7 @@ const Navbar = async () => {
               }}
             >
               <button type="submit" className="nav-link">
-                Login
+                Login with GitHub
               </button>
             </form>
           )}

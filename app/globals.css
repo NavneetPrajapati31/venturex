@@ -111,7 +111,14 @@
   }
 
   .section_container {
-    @apply px-6 py-10 max-w-7xl mx-auto bg-black bg-opacity-20 rounded-[20px];
+    @apply px-8 py-10 max-w-7xl mx-auto mb-10 bg-black bg-opacity-20 rounded-[20px];
+  }
+
+  @media (max-width: 1370px) {
+    .section_container {
+      margin-left: 1.7rem !important;
+      margin-right: 1.7rem !important;
+    }
   }
 
   .section_container2 {
@@ -172,7 +179,7 @@
 
   /* searchform */
   .search-form {
-    @apply max-w-2xl w-full min-h-[50px] bg-white opacity-75 rounded-[80px] text-[24px] mt-8 px-2 flex flex-row items-center gap-5;
+    @apply max-w-2xl w-full min-h-[50px] bg-white rounded-[80px] text-[24px] mt-8 px-2 flex flex-row items-center gap-5;
   }
 
   .search-input {
@@ -206,12 +213,19 @@
   }
 
   .startup-card_skeleton {
-    @apply w-full h-96 rounded-[22px] bg-black-200;
+    @apply w-full h-[450px] rounded-[22px] bg-black-200;
   }
 
   /* startupform */
   .startup-form {
-    @apply max-w-2xl mx-auto  mb-10 space-y-8 px-6;
+    @apply max-w-2xl mx-auto mb-10 space-y-8 px-6 py-8 bg-black bg-opacity-20 rounded-[20px];
+  }
+
+  @media (max-width: 700px) {
+    .startup-form {
+      margin-left: 1.5rem !important;
+      margin-right: 1.5rem !important;
+    }
   }
 
   .startup-form_label {
