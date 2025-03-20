@@ -18,7 +18,7 @@ const Navbar = async () => {
         <div className="flex items-center gap-3">
           {session && session?.user ? (
             <>
-              <Link href="/startup/create" className="nav-button">
+              <Link href="/startup/create" className="nav-link">
                 <span className="max-sm:hidden">Create</span>
                 <BadgePlus className="size-6 sm:hidden text-white" />
               </Link>
@@ -54,7 +54,7 @@ const Navbar = async () => {
                 await signIn("github");
               }}
             >
-              <button type="submit" className="nav-button">
+              <button type="submit" className="nav-link">
                 Login
               </button>
             </form>
