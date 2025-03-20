@@ -133,7 +133,7 @@
   /* profile */
   .profile_container {
     @apply w-full pb-10 pt-20 px-6 max-w-7xl mx-auto lg:flex-row flex-col flex gap-10;
-    margin-top: 20vh !important;
+    margin-top: 10vh !important;
   }
 
   .profile_card {
